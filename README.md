@@ -208,8 +208,8 @@ host-compiled comparison of engine functions on vectors, and those written argum
   failures and the RefCell failures were observed on a probe built with the same entrypoint and toolchain
   (TESTING.md, section 4).
 
-Not verified for this repository in particular: its GitHub Actions workflow (build and hash check) has not yet run
-on GitHub's runners.
+The GitHub Actions workflow of this repository (`build`) makes the same build on a GitHub-hosted x86-64 runner on every
+push and checks the sha256; its first run, on the first commit, passed.
 
 ## Where the long documents are
 
