@@ -1,0 +1,17 @@
+binary under test: target/percolator.so (port)
+debconf: delaying package configuration, since apt-utils is not installed
+c6dc6b24c4f0a8cfb801eaf542e27db66357a2051b41b6012aba8ffb30f55b9c  /so/percolator_prog.so
+50e532267926e180f013200c1799e26127dd23dc150866cffd491424629ddf93  /matchers/auth_matcher.so
+e0c20fad34a7822cc6ce42a3c77ff08a8591977102f0c497a339d66a9dd6240a  /matchers/hostile_matcher.so
+15ca5d638e7911157ef075b60170c06d82ef2208f6565002cf6620315e6dc3ea  /matchers/percolator_match.so
+listing_oracle_scope: complete after 1s, 2 passed, 0 failed, 0 ignored (test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.41s)
+anchor_v2_realloc_probe: complete after 0s, 1 passed, 0 failed, 0 ignored (test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.34s)
+open_issue_regressions: complete after 1s, 3 passed, 0 failed, 0 ignored (test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.44s)
+v16_program_fuzz_regressions: complete after 184s, 148 passed, 0 failed, 0 ignored (test result: ok. 148 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 183.46s)
+target                        compiled  status    seconds  tests  passed  failed  ignored
+listing_oracle_scope          yes       complete  1        2      2       0       0
+anchor_v2_realloc_probe       yes       complete  0        1      1       0       0
+open_issue_regressions        yes       complete  1        3      3       0       0
+v16_program_fuzz_regressions  yes       complete  184      148    148     0       0
+traces: 113 files in runs/port/trace
+author's suite (port): as expected

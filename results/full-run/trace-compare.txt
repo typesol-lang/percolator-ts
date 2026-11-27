@@ -1,0 +1,10 @@
+tests with a trace: 1901 (main.trace, the unnamed threads', among them: yes); identical throughout: 1900
+transactions compared: 2324991; identical: 2324990; different: 1; on one side only: 35
+main.trace: 977 groups of equal lines whose compute units vary (judged against their cheapest reference line)
+succeeding identically in both: 2127486; compute units over those: reference 128297605017, port 67489438873
+expected reference-over-limit	inv_078_permissionless_recovery_coverage..v16_bpf_force_close_liveness_survives_14_stale_leg_grief_via_precrank	transaction 12
+    reference: Perc:64, ix=63c8e53638b4f60f res=err:InstructionError(2,ProgramFailedToComplete) ret=9e96ef36877a7506 logs=6/25eb93edbcbffa19 accs=9a2f03878ff49c9f cu=1400000
+    port:      Perc:64, ix=63c8e53638b4f60f res=ok ret=9e96ef36877a7506 logs=6/43382995c8a03c21 accs=2cbb9fa54c01ac3b cu=575741
+    1 of 13 aligned transactions differ in this way; reference 48, port 13 transactions
+    listed: the one-shot ForceCloseAbandonedAsset (transaction 12) exhausts the reference's 1,400,000 compute units; the port completes it, and its test then stops (above); the vitest harness compares the same shape with the reference under a raised budget
+trace comparison: every difference is listed and every listed one was observed

@@ -1,0 +1,21 @@
+binary under test: port-c6dc6b24.so (port)
+debconf: delaying package configuration, since apt-utils is not installed
+c6dc6b24c4f0a8cfb801eaf542e27db66357a2051b41b6012aba8ffb30f55b9c  /so/percolator_prog.so
+50e532267926e180f013200c1799e26127dd23dc150866cffd491424629ddf93  /matchers/auth_matcher.so
+e0c20fad34a7822cc6ce42a3c77ff08a8591977102f0c497a339d66a9dd6240a  /matchers/hostile_matcher.so
+15ca5d638e7911157ef075b60170c06d82ef2208f6565002cf6620315e6dc3ea  /matchers/percolator_match.so
+listing_oracle_scope: complete after 1s, 2 passed, 0 failed, 0 ignored (test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.46s)
+anchor_v2_realloc_probe: complete after 1s, 1 passed, 0 failed, 0 ignored (test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.35s)
+open_issue_regressions: complete after 2s, 3 passed, 0 failed, 0 ignored (test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.50s)
+v16_program_fuzz_regressions: complete after 177s, 148 passed, 0 failed, 0 ignored (test result: ok. 148 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 176.38s)
+v16_program_stateful_fuzz: exit-101 after 8574s, 335 passed, 1 failed, 0 ignored (test result: FAILED. 335 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8573.41s)
+v16_cu: exit-101 after 7873s, 1571 passed, 10 failed, 0 ignored (test result: FAILED. 1571 passed; 10 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7871.62s)
+target                        compiled  status    seconds  tests  passed  failed  ignored
+listing_oracle_scope          yes       complete  1        2      2       0       0
+anchor_v2_realloc_probe       yes       complete  1        1      1       0       0
+open_issue_regressions        yes       complete  2        3      3       0       0
+v16_program_fuzz_regressions  yes       complete  177      148    148     0       0
+v16_program_stateful_fuzz     yes       exit-101  8574     336    335     1       0
+v16_cu                        yes       exit-101  7873     1581   1571    10      0
+traces: 1901 files in <results-dir>/trace
+author's suite (port): as expected

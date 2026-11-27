@@ -1,0 +1,24 @@
+percolator-ts
+A port of Percolator v16 to TypeScript, compiled to a Solana SBF program with TypeSOL.
+
+This is a derived work of Percolator by Anatoly Yakovenko, Copyright Anatoly Yakovenko, licensed under the
+Apache License, Version 2.0 (the text is in LICENSE, copied from the upstream repository at the commit below):
+
+- aeyakovenko/percolator-prog, commit 7b11091328de23cded2e4afe96592bbd060a6828 (the Solana program,
+  src/v16_program.rs, default features)
+- aeyakovenko/percolator, commit 5e3af0710ec7e9b7077393012f8a94a31b2f07ef (the risk engine, src/v16.rs and
+  src/wide_math.rs, the commit fixed by the program's Cargo.lock)
+
+Changes: the program and the engine code its 50 instructions reach were rewritten in TypeScript for the TypeSOL
+compiler (src/). The files under reference/ build the upstream sources unchanged and run the upstream test suite;
+reference/trace/*.rs are replacements spliced, only for tracing, into LiteSVM 0.1.0, solana-sdk 1.18.26 and
+solana-program 1.18.26 (each Apache-2.0) inside the test container.
+
+This port is unofficial: it is not made, reviewed or endorsed by the upstream author. The upstream warning applies to
+it equally: an educational research project, not audited, not for use in production or with real funds.
+
+The comparison also uses, unchanged and built from source in Docker: aeyakovenko/percolator-match, commit
+60aac3a996d0264c47fbefe9a2625d6ee6fb6a47, and the test matchers in percolator-prog's tests/fixtures (Apache-2.0).
+
+A binary built from src/ contains the TypeSOL runtime of the @typesol/cli package (MIT licence), which the compiler
+links into every program.

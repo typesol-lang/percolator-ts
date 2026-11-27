@@ -1,0 +1,23 @@
+{
+  "name": "percolator-ts",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Percolator v16 ported to TypeScript, compiled to a Solana SBF program with TypeSOL",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "build": "TYPESOL_DOCKER_CPUS=${TYPESOL_DOCKER_CPUS:-2} typesol build src/percolator.ts --docker --out target",
+    "check-hash": "sh scripts/check-hash.sh target/percolator.so",
+    "build:verify": "pnpm build && pnpm check-hash",
+    "reference": "bash reference/build.sh",
+    "suite": "bash reference/author-suite.sh",
+    "compare": "node reference/author-trace-compare.ts"
+  },
+  "devDependencies": {
+    "typesol": "npm:@typesol/cli@0.50.0"
+  }
+}

@@ -1,0 +1,4 @@
+tests with a trace: 113 (main.trace, the unnamed threads', among them: no); identical throughout: 113
+transactions compared: 26490; identical: 26490; different: 0; on one side only: 0
+succeeding identically in both: 24197; compute units over those: reference 801268645, port 413968015
+trace comparison: every difference is listed and every listed one was observed

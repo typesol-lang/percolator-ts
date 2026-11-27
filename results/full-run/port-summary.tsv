@@ -1,0 +1,7 @@
+target	compiled	status	seconds	tests	passed	failed	ignored
+listing_oracle_scope	yes	complete	1	2	2	0	0
+anchor_v2_realloc_probe	yes	complete	1	1	1	0	0
+open_issue_regressions	yes	complete	2	3	3	0	0
+v16_program_fuzz_regressions	yes	complete	177	148	148	0	0
+v16_program_stateful_fuzz	yes	exit-101	8574	336	335	1	0
+v16_cu	yes	exit-101	7873	1581	1571	10	0

@@ -1,0 +1,4 @@
+cc35fa4853bddd4e7f58c0e248c7c298ee152625d423ee6ed6b35c9fdfbe60b9  /so/percolator_prog.so
+50e532267926e180f013200c1799e26127dd23dc150866cffd491424629ddf93  /matchers/auth_matcher.so
+e0c20fad34a7822cc6ce42a3c77ff08a8591977102f0c497a339d66a9dd6240a  /matchers/hostile_matcher.so
+15ca5d638e7911157ef075b60170c06d82ef2208f6565002cf6620315e6dc3ea  /matchers/percolator_match.so
